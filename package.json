@@ -24,5 +24,6 @@
   },
   "files": [
     "ez"
-  ]
+  ],
+  "private": false
 }
