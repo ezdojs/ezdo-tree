@@ -1,0 +1,28 @@
+{
+  "name": "ezdo-tree",
+  "version": "1.0.0",
+  "description": "ezdo.js 的 tree 组件",
+  "main": "ez/ezdo.tree.esm.js",
+  "scripts": {
+    "build": "rollup -c rollup.config.js"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/ezdojs/ezdo-tree.git"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/ezdojs/ezdo-tree/issues"
+  },
+  "homepage": "https://github.com/ezdojs/ezdo-tree#readme",
+  "devDependencies": {
+    "rollup": "^1.31.1",
+    "rollup-plugin-postcss": "^2.0.6",
+    "rollup-plugin-terser": "^5.2.0"
+  },
+  "files": [
+    "ez"
+  ]
+}
