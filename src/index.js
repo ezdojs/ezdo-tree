@@ -32,7 +32,7 @@ class Tree extends ez.Node {
             treeItem.add(pico)
 
             treeItem.text = treeItemData.name
-            treeItem.ssdata = treeItemData
+            treeItem.data = treeItemData
             treeItem.isFolder = treeItemData.children && treeItemData.children.length
             treeItem.isOpen = false
             treeItem.on('click', this._select, this)
@@ -53,7 +53,7 @@ class Tree extends ez.Node {
                 node.remove(node.children[2])
             }else {
                 node.children[0].text = '-'
-                this._render(node.ssdata.children, node)
+                this._render(node.data.children, node)
             }
             node.isOpen = !node.isOpen
         }else {
