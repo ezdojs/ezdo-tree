@@ -64,7 +64,7 @@ class Tree extends ez.Node {
             this._ez_lastActiveNode = node
         }
         if(this._ez_s_handler) {
-            // this._ez_s_handler.bind(this._ez_s_caller)(node.data)
+             this._ez_s_handler.bind(this._ez_s_caller)(node.data)
         }
     }
 }
