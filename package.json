@@ -1,6 +1,6 @@
 {
   "name": "ezdo-tree",
-  "version": "1.0.4",
+  "version": "1.0.5",
   "description": "ezdo.js 的 tree 组件",
   "main": "ez/ezdo.tree.esm.js",
   "scripts": {
@@ -10,8 +10,8 @@
     "type": "git",
     "url": "git+https://github.com/ezdojs/ezdo-tree.git"
   },
-  "keywords": [],
-  "author": "",
+  "keywords": ["ezdo", "ezdo.js", "tree", "shu", "树"],
+  "author": "王晓维",
   "license": "ISC",
   "bugs": {
     "url": "https://github.com/ezdojs/ezdo-tree/issues"
@@ -25,5 +25,8 @@
   "files": [
     "ez"
   ],
-  "private": false
+  "private": false,
+  "dependencies": {
+    "ezdo": "^2.1.0"
+  }
 }

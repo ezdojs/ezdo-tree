@@ -10,7 +10,8 @@ export default {
   	plugins: [
   		terser(),
     	postcss({
-	      extract: true
+		  extract: true,
+		  minimize: true
 	    })
   	]
  }

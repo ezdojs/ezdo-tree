@@ -8,6 +8,7 @@ class Tree extends ez.Node {
         this._ez_s_handler = null
         this._ez_s_caller = null
         this._ez_lastActiveNode = null
+        this.selectIndex = 0 
     }
 
     setSelect(handler, caller) {
@@ -15,6 +16,10 @@ class Tree extends ez.Node {
         this._ez_s_caller = caller
     }
 
+    /**
+     *[ {name:'', children:[],...} ]
+     * @param {数据列表} array 
+     */
     setData(array) {
         this._render(array, this)
     }
@@ -23,7 +28,7 @@ class Tree extends ez.Node {
         let ul = new ez.Node('ul')
         rootNode.add(ul)
 
-        array.forEach(treeItemData => {
+        array.forEach((treeItemData,idx) => {
             let treeItem = new ez.Node('li')
             ul.add(treeItem)
 
@@ -42,6 +47,10 @@ class Tree extends ez.Node {
             }else {
                 // treeItem.addClass('file')
                 pico.text = '-'
+            }
+
+            if(this.selectIndex === idx && rootNode === this) {
+                this._select(treeItem)
             }
         });
     }
