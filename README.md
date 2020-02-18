@@ -34,7 +34,7 @@ class Ez extends ez.Node {
 
 ##### 效果
 
-![](images/tree.png)
+![](//ezdojs.github.io/images/tree.png)
 
 ##### 相关链接
 
