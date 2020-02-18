@@ -17,7 +17,7 @@ class Ez extends ez.Node {
         super()
         
         let tree = new Tree()
-        tree.setSelect(this.select, this)
+        //tree.setSelect(this.select, this) // 回调
         tree.setData([
             {name:'ezdo 1', children: null},
             {name:'ezdo 2', children: [
@@ -27,7 +27,9 @@ class Ez extends ez.Node {
             {name:'ezdo 3', children: null},
             {name:'ezdo 4', children: null}
         ])
-        this.add(this.tree)
+        // this.add(this.tree) // v 1.0.5 错误
+        this.add(tree) // v 1.0.6 修改 README
+        
     }
 }
 ```

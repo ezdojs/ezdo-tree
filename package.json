@@ -1,6 +1,6 @@
 {
   "name": "ezdo-tree",
-  "version": "1.0.5",
+  "version": "1.0.6",
   "description": "ezdo.js 的 tree 组件",
   "main": "ez/ezdo.tree.esm.js",
   "scripts": {

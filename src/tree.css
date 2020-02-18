@@ -1,4 +1,8 @@
 
+.ezdo-tree {
+    text-align: left;
+}
+
 .ezdo-tree ul {
     list-style: none;
     padding-inline-start: 10px;
