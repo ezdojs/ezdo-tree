@@ -11,6 +11,7 @@
 
 .ezdo-tree li {
     cursor: pointer;
+    white-space: nowarp;
 }
 
 .ezdo-tree .item-ico {
